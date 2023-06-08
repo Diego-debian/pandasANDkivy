@@ -1,0 +1,23 @@
+#Instarlar pyinstaller
+pip install pyinstaller
+
+#Crear el ejecutable
+pyinstaller --name=GeneraAsistencia main4.py
+
+#crear el otro ejecutable
+pyinstaller --name=GeneraDeserciones main3.py
+
+
+#Volcar todo en un solo ejecutable
+pyinstaller --name=GeneraAsistencia --onefile main4.py
+
+
+#Volcar todo en un solo ejecutable
+pyinstaller --name=GeneraDeserciones --onefile main3.py
+
+
+#Para generarlos con icono
+pyinstaller --name=GeneraAsistencia  --icon=asistencia.ico --onefile main4.py
+
+#Para generarlos con icono
+pyinstaller --name=GeneraDeserciones --icon=asistencia.ico --onefile main3.py
